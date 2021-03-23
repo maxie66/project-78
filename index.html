@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>project-78</title>
+    </head>
+    <body>
+        <h1>Family Book</h1> 
+        <Script>
+            var Familyarray=[]
+            var Family=["father","mother","brother"];
+   document.getElementById("declaration_of_arrays").innerHTML=Family;
+   var firstvalue=Family[0];
+   document.getElementById("access_first_element").innerHTML=firstvalue;
+   var secondvalue=Family[1];
+   document.getElementById("access_second_element").innerHTML=secondvalue;
+   var thirdvalue=Family[2];
+   document.getElementById("access_third_element").innerHTML=thirdvalue;
+   var lenghtofarray=Family.length;
+   document.getElementById("display_length_of_array").innerHTML=lenghtofarray;
+   var blankarray="";
+   for(i=0;i<Family.length;i++){
+       blankarray=blankarray+Family[i]+"<br>";
+   }
+   document.getElementById("loop_the_array").innerHTML=blankarray;
+   Family.push("sister,baby");
+   document.getElementById("add_element_at_the_end_of_array").innerHTML=Family;
+   
+        </Script>
+    </body>
+</html>
